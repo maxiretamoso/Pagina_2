@@ -34,7 +34,7 @@
   font-size: 1.5rem;
 }
 
-.imagenPrincipal {
+.ba1 {
   width: 100%;
   height: auto;
   display: block;
@@ -77,7 +77,7 @@
   line-height: 1.4;
 }
 
-.btn-custom-transparent {
+.botonTranslucido{
   background-color: transparent;
   color: white;
   border: 1.5px solid white;
@@ -88,12 +88,12 @@
   transition: background-color 0.3s, color 0.3s;
 }
 
-.btn-custom-transparent:hover {
+.botonTranslucido:hover {
   background-color: white;
   color: #26292d; 
 }
 
-.btn-custom-green {
+.botonVerde {
   background-color: #178754;
   color: white;
   border: none;
@@ -104,7 +104,7 @@
   transition: background-color 0.3s;
 }
 
-.btn-custom-green:hover {
+.botonVerde:hover {
   background-color: #00170d; 
 }
 
@@ -113,4 +113,34 @@
   justify-content: flex-end;
   gap: 0.2rem;
   margin-top: 0.5rem;
+}
+
+.oradores-section {
+  background-color: #ffffff;
+}
+
+.subtitulo-oradores {
+  font-size: 0.8rem;
+  color: #000000;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+  font-weight: 450;
+}
+
+.titulo-oradores {
+  font-size: 2.2rem;
+  color: #000000;
+  font-weight: 500;
+}
+
+.card-img-top {
+  width: 100% !important;
+  height: 400px !important;
+  object-fit: cover !important;
+  display: block;
+}
+
+.badge {
+  font-size: 1rem;
+  padding: 0.6em 1em;
 }
