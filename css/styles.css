@@ -85,7 +85,6 @@
   padding: 0.3rem 0.8rem;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 .botonTranslucido:hover {
@@ -101,11 +100,10 @@
   padding: 0.3rem 0.8rem;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .botonVerde:hover {
-  background-color: #00170d; 
+  background-color: #000000; 
 }
 
 .botones-container {
@@ -144,3 +142,39 @@
   font-size: 1rem;
   padding: 0.6em 1em;
 }
+
+.titulo-bsas {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.parrafo-bsas {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.boton-bsas {
+  font-size: 0.9rem;
+  padding: 0.4rem 0.9rem;
+}
+
+.contenido-bsas {
+  background-color: #393d43;
+  color: white;
+}
+
+.botonConocer {
+  background-color: transparent;
+  color: white;
+  border: 1.5px solid white;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.botonConocer:hover {
+  background-color: white;
+  color: #26292d; 
+}
+
