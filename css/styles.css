@@ -65,6 +65,7 @@
   text-align: right; 
   max-width: 580px;
 }
+
 .titulo-hero {
   font-size: 2rem;
   margin: 0 0 0.5rem 0;
@@ -215,9 +216,10 @@
   color: #ffffff;
   border: none;
   border-radius: 5px;
-  padding: 0.5rem 25rem;
+  padding: 0.3rem 25rem;
   font-weight: 500;
   font-size: 1.4rem;
+  cursor: pointer;
 }
 
 .botonFormulario:hover {
@@ -305,14 +307,14 @@
 .bloque-mapa {
   background-color: #f8f9fa;
   position: relative;
+  width: 100vw;
+  max-width: 100%;
+  margin-bottom: 30px;
   left: 50%;
   right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  margin-bottom: 30px;
-  width: 100vw;
-  box-sizing: border-box; 
-  overflow: hidden; 
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .mapa-iframe-container iframe {
@@ -340,4 +342,152 @@ footer > div {
 footer a {
   color: white;
   text-decoration: none;
+}
+
+@media (max-width: 991.98px) {
+  .logo-link {
+    margin-left: 0rem !important;
+    justify-content: flex-start;
+  }
+
+  .botonFormulario {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .hero {
+    height: 660px; 
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-text {
+    top: auto;
+    bottom: 80%;
+    right: 5%;
+    max-width: 90%;
+    transform: none;
+    font-size: 0.9rem;
+    text-align: right;
+  }
+
+  .ba1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(7);
+    transform-origin: 70%;
+    overflow: hidden;
+    display: block;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    right: auto;
+    background-color: #26292d;
+    padding: 1rem;
+    border-radius: 8px;
+    width: auto;
+    min-width: 150px;
+    z-index: 1050;
+    flex-direction: column;
+  }
+
+  .navbar-collapse.show {
+    display: flex;
+  }
+
+  .navbar-nav {
+    flex-direction: column !important;
+    margin: 0 !important;
+    gap: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+  }
+
+  body, html {
+    overflow-x: hidden;
+  }
+
+  .hero-text {
+    top: 50%;
+    right: 5%;
+    max-width: 90%;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    text-align: right;
+  }
+
+  .titulo-hero {
+    font-size: 1.3rem;
+  }
+
+  .subtitulo-hero {
+    font-size: 0.85rem;
+  }
+
+  .botones-container {
+    gap: 0.3rem;
+  }
+
+  .formulario form {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .formulario .row.g-4.mb-4 > .col-md-5 {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+  }
+
+  .formulario textarea.form-control,
+  .formulario .form-control {
+    width: 100% !important;
+    font-size: 1rem !important;
+  }
+
+  .botonFormulario {
+    width: 100% !important;
+    max-width: 92% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    box-sizing: border-box;
+    font-size: 1rem !important;
+    margin-bottom: 1rem;
+  }
+
+  .formulario .descripcion-formulario {
+    margin-bottom: 0rem !important;
+  }
+
+  .textoRecordar-container {
+    margin-bottom: 0rem !important;
+  }
+
+  .formulario .mb-1.col-md-12 {
+    margin-bottom: 1rem;
+  }
+
+  .oradores-section {
+    padding-top: 0.5rem !important;
+  }
+
+  footer {
+    padding: 20px 0;
+  }
+
+  footer > div {
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    align-items: center;
+  }
 }
