@@ -217,6 +217,7 @@
   border: none;
   border-radius: 5px;
   padding: 0.3rem 25rem;
+  margin-bottom: 1rem;
   font-weight: 500;
   font-size: 1.4rem;
   cursor: pointer;
@@ -261,32 +262,6 @@
   max-width: 440px !important;
 }
 
-.formulario .mb-1.col-md-8 {
-  max-width: 1200px; 
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-}
-
-.textoRecordar {
-  color: #6c757d;
-  font-size: 0.8rem;
-  margin-top: 0.25rem;
-}
-
-.textoRecordar-container {
-  max-width: 780px;
-  margin: 1rem auto 1rem auto;
-  text-align: left;
-}
-
-.formulario .mb-1.col-md-12 {
-  max-width: 1200px; 
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-}
-
 .form-textarea-wrapper {
   width: 100%;
   max-width: 900px;
@@ -298,10 +273,10 @@
 }
 
 .instruccion-charla {
-  margin-top: 8px;
   font-size: 1rem;
   color: #6c757d; 
   text-align: left;
+  margin: 0 10rem 0 10rem;
 }
 
 .bloque-mapa {
@@ -344,7 +319,7 @@ footer a {
   text-decoration: none;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1000px) {
   .logo-link {
     margin-left: 0rem !important;
     justify-content: flex-start;
@@ -454,6 +429,13 @@ footer a {
     font-size: 1rem !important;
   }
 
+  .instruccion-charla {
+  font-size: 1rem;
+  color: #6c757d; 
+  text-align: left;
+  margin: 0;
+}
+
   .botonFormulario {
     width: 100% !important;
     max-width: 92% !important;
@@ -462,14 +444,6 @@ footer a {
     box-sizing: border-box;
     font-size: 1rem !important;
     margin-bottom: 1rem;
-  }
-
-  .formulario .descripcion-formulario {
-    margin-bottom: 0rem !important;
-  }
-
-  .textoRecordar-container {
-    margin-bottom: 0rem !important;
   }
 
   .formulario .mb-1.col-md-12 {
